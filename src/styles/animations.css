@@ -1,0 +1,951 @@
+/* Fade in animation for the form wrapper */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Pulse animation for the logo */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Glow animation for buttons */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 150, 255, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 150, 255, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(0, 150, 255, 0.5);
+    }
+}
+
+/* Slide in animation for inputs */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Advanced 3D Transform Animation */
+@keyframes float3D {
+    0% {
+        transform: translateY(0) rotateX(0) rotateY(0) scale(1);
+    }
+    25% {
+        transform: translateY(-10px) rotateX(5deg) rotateY(5deg) scale(1.02);
+    }
+    50% {
+        transform: translateY(0) rotateX(0) rotateY(0) scale(1);
+    }
+    75% {
+        transform: translateY(10px) rotateX(-5deg) rotateY(-5deg) scale(0.98);
+    }
+    100% {
+        transform: translateY(0) rotateX(0) rotateY(0) scale(1);
+    }
+}
+
+/* Matrix Rain Effect */
+@keyframes matrixRain {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+/* Neon Glow Animation */
+@keyframes neonGlow {
+    0% {
+        text-shadow: 0 0 5px #fff,
+                     0 0 10px #fff,
+                     0 0 15px #0ff,
+                     0 0 20px #0ff,
+                     0 0 25px #0ff;
+    }
+    50% {
+        text-shadow: 0 0 10px #fff,
+                     0 0 20px #fff,
+                     0 0 30px #0ff,
+                     0 0 40px #0ff,
+                     0 0 50px #0ff;
+    }
+    100% {
+        text-shadow: 0 0 5px #fff,
+                     0 0 10px #fff,
+                     0 0 15px #0ff,
+                     0 0 20px #0ff,
+                     0 0 25px #0ff;
+    }
+}
+
+/* Particle Effect */
+@keyframes particleFloat {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Cyberpunk Glitch Effect */
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+/* Galaxy Background Animation */
+@keyframes galaxy {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Floating Stars Animation */
+@keyframes floatStars {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(180deg);
+    }
+    100% {
+        transform: translateY(0) rotate(360deg);
+    }
+}
+
+/* Wave Animation */
+@keyframes wave {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(5px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Nebula Effect */
+@keyframes nebula {
+    0% {
+        background-position: 0% 50%;
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        background-position: 100% 50%;
+        filter: hue-rotate(180deg);
+    }
+    100% {
+        background-position: 0% 50%;
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* Cosmic Glow */
+@keyframes cosmicGlow {
+    0% {
+        box-shadow: 0 0 20px rgba(138, 43, 226, 0.5),
+                    0 0 40px rgba(138, 43, 226, 0.3),
+                    0 0 60px rgba(138, 43, 226, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(138, 43, 226, 0.7),
+                    0 0 60px rgba(138, 43, 226, 0.5),
+                    0 0 90px rgba(138, 43, 226, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(138, 43, 226, 0.5),
+                    0 0 40px rgba(138, 43, 226, 0.3),
+                    0 0 60px rgba(138, 43, 226, 0.2);
+    }
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0) rotateX(0) rotateY(0);
+    }
+    50% {
+        transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
+    }
+    100% {
+        transform: translateY(0) rotateX(0) rotateY(0);
+    }
+}
+
+/* Metallic and Complex Animations */
+@keyframes metallicFloat {
+    0% {
+        transform: translateY(0) rotateX(0) rotateY(0) scale(1);
+        filter: brightness(1) contrast(1);
+    }
+    25% {
+        transform: translateY(-10px) rotateX(5deg) rotateY(5deg) scale(1.02);
+        filter: brightness(1.2) contrast(1.1);
+    }
+    50% {
+        transform: translateY(0) rotateX(0) rotateY(0) scale(1);
+        filter: brightness(1) contrast(1);
+    }
+    75% {
+        transform: translateY(10px) rotateX(-5deg) rotateY(-5deg) scale(0.98);
+        filter: brightness(0.8) contrast(1.1);
+    }
+    100% {
+        transform: translateY(0) rotateX(0) rotateY(0) scale(1);
+        filter: brightness(1) contrast(1);
+    }
+}
+
+@keyframes metallicShine {
+    0% {
+        background-position: -200% center;
+        filter: brightness(1) contrast(1);
+    }
+    50% {
+        filter: brightness(1.3) contrast(1.2);
+    }
+    100% {
+        background-position: 200% center;
+        filter: brightness(1) contrast(1);
+    }
+}
+
+@keyframes holographic {
+    0% {
+        background: linear-gradient(45deg, 
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.1));
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        background: linear-gradient(45deg,
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.3),
+            rgba(255, 255, 255, 0.2));
+        filter: hue-rotate(180deg);
+    }
+    100% {
+        background: linear-gradient(45deg,
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.1));
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes circuitGlow {
+    0% {
+        box-shadow: 
+            0 0 5px rgba(78, 205, 196, 0.5),
+            0 0 10px rgba(78, 205, 196, 0.3),
+            inset 0 0 5px rgba(78, 205, 196, 0.5);
+    }
+    50% {
+        box-shadow: 
+            0 0 20px rgba(78, 205, 196, 0.8),
+            0 0 30px rgba(78, 205, 196, 0.5),
+            inset 0 0 20px rgba(78, 205, 196, 0.8);
+    }
+    100% {
+        box-shadow: 
+            0 0 5px rgba(78, 205, 196, 0.5),
+            0 0 10px rgba(78, 205, 196, 0.3),
+            inset 0 0 5px rgba(78, 205, 196, 0.5);
+    }
+}
+
+/* Modern Box Structure */
+.formWrapper {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    animation: gentleFloat 4s ease-in-out infinite;
+}
+
+.formWrapper::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg,
+        #ffb6c1,
+        #87ceeb,
+        #dda0dd,
+        #98fb98);
+    background-size: 400% 400%;
+    animation: softGlow 8s ease infinite;
+    z-index: -1;
+    border-radius: 22px;
+    opacity: 0.5;
+}
+
+.inputBox {
+    background: rgb(248, 246, 246);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.inputBox:focus {
+    animation: neonPulse 2s infinite;
+    transform: translateY(-2px);
+}
+
+.inputBox:nth-child(1) { --i: 1; }
+.inputBox:nth-child(2) { --i: 2; }
+
+.joinBtn {
+    background: linear-gradient(45deg,
+        #ffb6c1,
+        #87ceeb);
+    border: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    animation: gentleFloat 5s ease-in-out infinite;
+}
+
+.joinBtn:hover {
+    animation: neonPulse 1s infinite;
+    transform: translateY(-2px);
+}
+
+.createNewBtn {
+    color: #ffb6c1;
+    transition: all 0.3s ease;
+    animation: gentleFloat 6s ease-in-out infinite;
+}
+
+.createNewBtn:hover {
+    animation: neonPulse 1s infinite;
+}
+
+/* Particle effects */
+.formWrapper::before,
+.formWrapper::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #0ff;
+    border-radius: 50%;
+    animation: particleFloat 3s infinite;
+}
+
+.formWrapper::before {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.formWrapper::after {
+    right: 10%;
+    animation-delay: 1.5s;
+}
+
+/* Background gradient animation */
+.homePageWrapper {
+    background: #1a1a2e;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Galaxy Background */
+.homePageWrapper::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: 
+        radial-gradient(circle at 20% 20%, rgba(255, 182, 193, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(135, 206, 235, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(221, 160, 221, 0.1) 0%, transparent 50%);
+    animation: softGlow 10s ease infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Floating Stars */
+.homePageWrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(2px 2px at 20px 30px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 50px 160px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 130px 80px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 160px 120px, #fff, rgba(0,0,0,0));
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    animation: floatStars 20s linear infinite;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+/* Nebula Effect on Form */
+.formWrapper::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg,
+        rgba(138, 43, 226, 0.1),
+        rgba(75, 0, 130, 0.1),
+        rgba(138, 43, 226, 0.1));
+    background-size: 200% 200%;
+    animation: nebula 10s ease infinite;
+    z-index: -1;
+}
+
+/* Footer animation */
+footer {
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    animation: gentleFloat 7s ease-in-out infinite;
+    margin-top: 30px;
+}
+
+footer h4 {
+    margin: 0;
+    padding: 10px;
+    display: inline-block;
+}
+
+footer a {
+    position: relative;
+    overflow: hidden;
+    color: #ffb6c1;
+    text-shadow: 0 0 5px rgba(255, 182, 193, 0.5);
+    transition: all 0.3s ease;
+    margin-left: 5px;
+}
+
+footer a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,
+        transparent,
+        #ffb6c1,
+        transparent);
+    animation: neonPulse 2s linear infinite;
+}
+
+footer a:hover {
+    animation: neonPulse 1s infinite;
+}
+
+/* Matrix rain effect in background */
+.homePageWrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, 
+        rgba(0, 255, 0, 0.1) 0%,
+        rgba(0, 255, 0, 0.05) 50%,
+        transparent 100%);
+    background-size: 100% 200%;
+    animation: matrixRain 20s linear infinite;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Button hover effects */
+.btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.btn:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+/* Logo */
+.homePageLogo {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+    animation: gentleFloat 4s ease-in-out infinite;
+    filter: drop-shadow(0 0 10px rgba(255, 182, 193, 0.5));
+}
+
+/* Label */
+.mainLabel {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #00ff88;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 20px 0;
+    padding: 10px;
+    background: transparent;
+    border-radius: 8px;
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+}
+
+.mainLabel span {
+    display: inline-block;
+    animation: moveText 8s linear infinite;
+    padding-left: 100%;
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.metallic-text {
+    background: linear-gradient(45deg, #00ff88, #00ffcc, #00ff88);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: metallicShine 3s linear infinite;
+}
+
+/* Subtle and Unique Animations */
+@keyframes gentleFloat {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes neonPulse {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 182, 193, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(255, 182, 193, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(255, 182, 193, 0.5);
+    }
+}
+
+@keyframes softGlow {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+/* Editor Page Animations */
+.mainWrap {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Restore .aside structure, only prevent scroll */
+.aside {
+    position: relative;
+    background: #1a1a2e;
+    color: #fff;
+    padding: 24px 16px;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.05);
+    z-index: 2;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+}
+
+.aside label,
+.aside select,
+.aside input,
+.aside button {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.aside select,
+.aside input {
+    margin-bottom: 0;
+}
+
+.logoImage {
+    animation: pulse 2s infinite;
+}
+
+.clientsList {
+    animation: fadeIn 0.5s ease-in;
+}
+
+.clientsList > * {
+    animation: slideIn 0.3s ease-out;
+    animation-fill-mode: both;
+}
+
+.clientsList > *:nth-child(1) { animation-delay: 0.1s; }
+.clientsList > *:nth-child(2) { animation-delay: 0.2s; }
+.clientsList > *:nth-child(3) { animation-delay: 0.3s; }
+.clientsList > *:nth-child(4) { animation-delay: 0.4s; }
+.clientsList > *:nth-child(5) { animation-delay: 0.5s; }
+
+.seLang {
+    animation: fadeIn 0.5s ease-in;
+    transition: all 0.3s ease;
+}
+
+.seLang:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 150, 255, 0.3);
+}
+
+/* Code Editor Animations */
+.CodeMirror {
+    animation: fadeIn 0.5s ease-in;
+    transition: all 0.3s ease;
+}
+
+.CodeMirror:hover {
+    box-shadow: 0 0 15px rgba(0, 150, 255, 0.2);
+}
+
+/* Text Animation for Connected Users */
+.asideInner h3 {
+    background: linear-gradient(45deg, #00ff88, #00ffcc, #00ff88);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: metallicShine 3s linear infinite;
+}
+
+/* Button Animations */
+button {
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 150, 255, 0.3);
+}
+
+/* Input Animations */
+input {
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 150, 255, 0.3);
+}
+
+/* Toast Animations */
+.toast {
+    animation: slideIn 0.3s ease-out;
+}
+
+/* Metallic Text Effect */
+.metallic-text {
+    background: linear-gradient(45deg, #00ff88, #00ffcc, #00ff88);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: metallicShine 3s linear infinite;
+}
+
+/* Moving Objects Animations */
+.mainWrap::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 20% 20%, rgba(0, 255, 136, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(0, 255, 204, 0.1) 0%, transparent 50%);
+    animation: floatBackground 15s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes floatBackground {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    50% { transform: translate(-10px, -10px) rotate(5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+/* Floating Particles */
+.mainWrap::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(2px 2px at 20px 30px, #00ff88, transparent),
+        radial-gradient(2px 2px at 40px 70px, #00ffcc, transparent),
+        radial-gradient(2px 2px at 50px 160px, #00ff88, transparent),
+        radial-gradient(2px 2px at 90px 40px, #00ffcc, transparent),
+        radial-gradient(2px 2px at 130px 80px, #00ff88, transparent),
+        radial-gradient(2px 2px at 160px 120px, #00ffcc, transparent);
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    animation: floatParticles 20s linear infinite;
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+@keyframes floatParticles {
+    0% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(180deg); }
+    100% { transform: translateY(0) rotate(360deg); }
+}
+
+/* Floating Code Elements */
+.aside::before {
+    content: '</>';
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 24px;
+    color: rgba(0, 255, 136, 0.2);
+    animation: floatCode 8s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.aside::after {
+    content: '{ }';
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    font-size: 24px;
+    color: rgba(0, 255, 204, 0.2);
+    animation: floatCode 8s ease-in-out infinite reverse;
+    pointer-events: none;
+}
+
+@keyframes floatCode {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(10px, -10px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0deg); }
+    75% { transform: translate(-10px, 10px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+/* Glowing Orbs */
+.clientsList::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle, rgba(0, 255, 136, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: floatOrb 6s ease-in-out infinite;
+    pointer-events: none;
+}
+
+.clientsList::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(circle, rgba(0, 255, 204, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: floatOrb 8s ease-in-out infinite reverse;
+    pointer-events: none;
+}
+
+@keyframes floatOrb {
+    0% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(20px, -20px) scale(1.2); }
+    100% { transform: translate(0, 0) scale(1); }
+}
+
+/* Uniform select box width for language and theme */
+select {
+    min-width: 180px;
+    width: 100%;
+    max-width: 250px;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 16px;
+    font-size: 1rem;
+}
+
+/* Remove forced sizing from select, input, and dropdowns */
+select, input, .inputBox {
+    width: auto !important;
+    height: auto !important;
+    max-width: none !important;
+    max-height: none !important;
+}
+
+/* Keep scroll prevention for main containers only */
+html, body, #root, .mainWrap, .editorWrap, .CodeMirror, .CodeMirror-scroll {
+    overflow: hidden !important;
+}
+
+/* Remove forced width, height, max-width, max-height from .aside and form controls */
+.aside {
+    /* Remove forced width, height, max-width, max-height */
+    position: relative;
+    background: #1a1a2e;
+    color: #f5f0f0;
+    padding: 24px 16px;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.05);
+    z-index: 2;
+    overflow: hidden; /* Only prevent scroll, not sizing */
+}
+
+/* Remove forced sizing from select, input, and dropdowns */
+select, input, .inputBox {
+    width: auto !important;
+    height: auto !important;
+    max-width: none !important;
+    max-height: none !important;
+}
+
+/* Keep scroll prevention for main containers only */
+html, body, #root, .mainWrap, .editorWrap, .CodeMirror, .CodeMirror-scroll {
+    overflow: hidden !important;
+}
+
+::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+}
+* {
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+}
+
+/* Make the Select Theme box narrower */
+.aside select:nth-of-type(2) {
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    display: block;
+} 
